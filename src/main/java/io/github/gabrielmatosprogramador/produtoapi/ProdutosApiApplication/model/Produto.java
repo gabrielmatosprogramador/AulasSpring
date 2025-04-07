@@ -2,16 +2,18 @@ package io.github.gabrielmatosprogramador.produtoapi.ProdutosApiApplication.mode
 
 import jakarta.persistence.*;
 
-@Table()
+@Entity
+@Table(name = "produto")
 public class Produto {
 
-    @Column
+    @Id
+    @Column(name = "id")
     private String id;
-    @Column
+    @Column(name = "nome")
     private String nome;
-    @Column
+    @Column(name = "descricao")
     private String descricao;
-    @Column
+    @Column(name = "preco")
     private Double preco;
 
     public String getId() {
