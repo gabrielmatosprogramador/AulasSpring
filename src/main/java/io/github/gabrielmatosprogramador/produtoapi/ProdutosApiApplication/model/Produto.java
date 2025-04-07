@@ -3,7 +3,7 @@ package io.github.gabrielmatosprogramador.produtoapi.ProdutosApiApplication.mode
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "produtos")
+@Table(name = "produto")
 public class Produto {
 
     @Id
