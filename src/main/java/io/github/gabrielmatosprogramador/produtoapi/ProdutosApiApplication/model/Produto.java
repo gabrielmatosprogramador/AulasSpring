@@ -1,9 +1,17 @@
 package io.github.gabrielmatosprogramador.produtoapi.ProdutosApiApplication.model;
 
+import jakarta.persistence.*;
+
+@Table()
 public class Produto {
+
+    @Column
     private String id;
+    @Column
     private String nome;
+    @Column
     private String descricao;
+    @Column
     private Double preco;
 
     public String getId() {
